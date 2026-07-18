@@ -1,0 +1,16 @@
+{
+  "name": "compsoc-finance-bot",
+  "version": "1.0.0",
+  "description": "Polls the CompSoc finance spreadsheet and posts expense changes to Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "googleapis": "^140.0.0"
+  }
+}

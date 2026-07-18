@@ -1,0 +1,14 @@
+services:
+  finance-bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      WEBHOOK_URL: ${WEBHOOK_URL}
+      SPREADSHEET_ID: ${SPREADSHEET_ID}
+      GOOGLE_APPLICATION_CREDENTIALS: /secrets/service-account.json
+    volumes:
+      - ./secrets/service-account.json:/secrets/service-account.json:ro
+      - bot-state:/data
+
+volumes:
+  bot-state:
