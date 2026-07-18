@@ -6,7 +6,7 @@ const WEBHOOK_URL = process.env.WEBHOOK_URL;
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const POLL_INTERVAL = parseInt(process.env.POLL_INTERVAL_MS || '30000');
 const ROLE_ID = process.env.ROLE_ID || '';
-const STATE_FILE = process.env.STATE_FILE || '/data/state.json';
+const STATE_FILE = process.env.STATE_FILE || '/data/state/state.json';
 
 if (!WEBHOOK_URL || !SPREADSHEET_ID) {
   console.error('need WEBHOOK_URL and SPREADSHEET_ID set');

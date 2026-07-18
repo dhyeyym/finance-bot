@@ -8,7 +8,7 @@ services:
       GOOGLE_APPLICATION_CREDENTIALS: /secrets/service-account.json
     volumes:
       - ./secrets/service-account.json:/secrets/service-account.json:ro
-      - bot-state:/data
+      - bot-state:/data/state/
 
 volumes:
   bot-state:
