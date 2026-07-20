@@ -11,6 +11,6 @@ RUN mkdir -p /data && chown -R node:node /data /app
 USER node
 
 ENV NODE_ENV=production
-ENV STATE_FILE=/data/state.json
+ENV STATE_FILE=/data/state/state.json
 
 CMD ["node", "index.js"]
